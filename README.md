@@ -40,25 +40,17 @@ npm start
 ```
 
 ## Project Structure
+## Project Structure
 
 ```
-src/
-├── app.js                        # Entry point
-├── store.js                      # In-memory data store
-├── controllers/
-│   └── tasks.controller.js       # Business logic
-├── middleware/
-│   └── error.middleware.js       # 404 + global error handler
-└── routes/
-    ├── health.routes.js
-    └── tasks.routes.js
+.
+├── app.js                  # Entry point
+├── store.js                # In-memory data store
+├── tasks.controller.js     # Business logic
+├── tasks.routes.js
+├── health.routes.js
+├── error.middleware.js     # 404 + global error handler
+├── package.json
+└── .env.example
 ```
 
-## Deployment (Linux)
-
-```bash
-# With PM2 (recommended)
-npm install -g pm2
-pm2 start src/app.js --name tasks-api
-pm2 save && pm2 startup
-```
