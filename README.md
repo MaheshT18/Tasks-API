@@ -1,7 +1,7 @@
 # Tasks API
 
 A production-ready REST API built with Node.js + Express for managing tasks.
-specially built to learn about how to deploy backend project on ec2
+
 
 ## Setup
 
